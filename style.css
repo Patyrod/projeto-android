@@ -28,6 +28,7 @@
 }
 
 * {
+    max-width: 600px;
     margin: 0px;
     padding: 0px;
 }
@@ -63,7 +64,7 @@ header>p {
     font-family: var(--fonte-padrao);
     font-size: 1.2em;
     color: white;
-    max-width: 600%;
+    max-width: 600px;
     padding-right: 10px;
     padding-left: 10px;
     margin: auto;
