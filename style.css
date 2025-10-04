@@ -30,11 +30,13 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body {
     background-color: var(--cor0);
     font-family: var(--fonte-padrao);
+    overflow-x: hidden;
 }
 
 a.externo::after {
@@ -92,7 +94,7 @@ nav>a:hover {
 }
 
 main {
-    min-width: 300px;
+    width: 100%;
     max-width: 1000px;
     margin: auto;
     margin-bottom: 30px;
@@ -157,7 +159,7 @@ main img.pequena {
 
 div.video {
     background-color: var(--cor5);
-    margin: 0px -20px 30px -20px;
+    margin: 0 0 30px 0;
     padding: 20px;
     padding-bottom: 56.6%;
     
@@ -193,12 +195,6 @@ aside>ul {
     columns: 2;
 }
 
-@media (max-width: 600px) {
-    aside>ul {
-        columns: 1;
-    }
-}
-
 
 footer {
     background-color: var(--cor5);
@@ -217,4 +213,10 @@ footer a {
 footer a:hover {
     text-decoration: underline;
     color: var(--cor1);
+}
+
+@media (max-width: 600px) {
+    aside>ul {
+        columns: 1;
+    }
 }
